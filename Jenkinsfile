@@ -8,12 +8,12 @@ pipeline {
       }
     }
     stage("Branch Test") {
-      when {
+      when 
         // skip this stage unless branch is NOT master
         {
           branch "master"
         }
-      }
+      
       steps {
         echo "World"
         echo "Heal it"
